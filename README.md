@@ -3,6 +3,8 @@
 # <div align="center"> ![JavaScript](img/js.png)</div>  
 __Le JavaScript__ est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les développeurs web.  
 
+# Un pseudo cours [ici](https://www.pierre-giraud.com/javascript-apprendre-coder-cours/presentation-variable/)
+
 ## Qu’est-ce qu’une variable ?  
 Une variable est un conteneur servant à stocker des informations de manière temporaire, comme une chaine de caractères (un texte) ou un nombre par exemple. 
 
