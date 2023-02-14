@@ -39,3 +39,26 @@ var nn = NaN;
 
 //alert("ma variable n est de type : "+typeof(n)+ "\nma variable u est de type : "+typeof(u)+"\nma variable nn est de type : "+typeof(nn));
 
+var heure_ouverture = 09.00;
+var heure_fermeture = 17.00;
+var actu = 9.30;
+var matin = 12.00;
+
+if (actu<heure_ouverture)
+{
+    alert("c'est trop tôt, revenez plus tard");
+}
+else if (actu>heure_ouverture && actu<heure_fermeture)
+{
+    if(actu>=heure_ouverture && actu<matin)
+    {
+        alert("Bienvenu ! C'est le matin !");
+    }
+    else
+    {
+    alert("Bienvenu ! C'est l'après-midi !");
+    }
+}
+else{
+    alert("Revenez demain");
+}
