@@ -24,7 +24,7 @@ var d = "42";
 alert("ma variable a est de type: "+typeof a+"\nma variable b est de type: "+typeof b+"\nma variable c est de type: "+typeof c+"\nma variable d est de type: "+typeof d);
 ```
 
-Ce qui donne: ![1er exemple](img\exemple_1.png)  
+Ce qui donne: ![1er exemple](img/exemple_1.png)  
 
 Les chiffres ont le type number et ce qui est dans les " sont identifié comme une chaine de caractère.
 ***
