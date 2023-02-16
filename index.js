@@ -1,35 +1,35 @@
-const prenom = "Lisa"
-const nom = "Dimitrief-Dontcheff"
-var age = 23
-const phrase = "Bonjour je m'appel "+prenom+" "+nom+" et j'ai "+age+" ans."
-// window.alert(phrase);
-// const pseudo = "Lyrael "
-// const race = "dragon "
-// const niveau = 1
-// const role = " brute"
-// const pagePerso = pseudo+race+niveau+role
-// window.alert(pagePerso);
+// const prenom = "Lisa"
+// const nom = "Dimitrief-Dontcheff"
+// var age = 23
+// const phrase = "Bonjour je m'appel "+prenom+" "+nom+" et j'ai "+age+" ans."
+// // window.alert(phrase);
+// // const pseudo = "Lyrael "
+// // const race = "dragon "
+// // const niveau = 1
+// // const role = " brute"
+// // const pagePerso = pseudo+race+niveau+role
+// // window.alert(pagePerso);
 
-//...
-// window.alert(new Date().toLocaleDateString("fr"));
-//...
+// //...
+// // window.alert(new Date().toLocaleDateString("fr"));
+// //...
 
-console.log(nom.length); //donne le nombre de caractère
-const monTableau = [];
-monTableau ["jaune avec des taches"] = "bibi";
-monTableau ["jaune"] = "bibu";
-monTableau ["noir"] = "bobo";
-console.table(monTableau);
+// console.log(nom.length); //donne le nombre de caractère
+// const monTableau = [];
+// monTableau ["jaune avec des taches"] = "bibi";
+// monTableau ["jaune"] = "bibu";
+// monTableau ["noir"] = "bobo";
+// console.table(monTableau);
 
-var maChaine = new String("exemple");
-var a = 42;
-var b = 4.2;
-var c = -42;
-var d = "42";
+// var maChaine = new String("exemple");
+// var a = 42;
+// var b = 4.2;
+// var c = -42;
+// var d = "42";
 //alert("ma variable a est de type: "+typeof a+"\nma variable b est de type: "+typeof b+"\nma variable c est de type: "+typeof c+"\nma variable d est de type: "+typeof d);
 
-var machaine = "exemple";
-var maChaine = new String("exemple");
+// var machaine = "exemple";
+// var maChaine = new String("exemple");
 
 //alert("ma variable machaine est de type : "+typeof(machaine)+ "\nma variable maChaine est de type : "+typeof(maChaine));
 
@@ -124,8 +124,8 @@ var maChaine = new String("exemple");
 //...
 
 
-var facture = 500;
-var réduction = 0;
+// var facture = 500;
+// var réduction = 0;
 
 // if (facture<1000)
 // {
@@ -181,8 +181,8 @@ var réduction = 0;
 
 //...
 
-var arrayNbr = [1, 2, 3];
-var arrayStr = ["a", "b", "c"];
+// var arrayNbr = [1, 2, 3];
+// var arrayStr = ["a", "b", "c"];
 
 
 // arrayNbr.push(4); //[1, 2, 3, 4] ajoute
@@ -205,9 +205,65 @@ var arrayStr = ["a", "b", "c"];
 // arrayNbr.filter(el => el > 1) // [2,3] renvoi tous les éléments qui respectent la condition
 // arrayNbr.every(el => el > 1);
 // arrayNbr.reverse();
+//console.log(arrayCopy);
+
+//const div = document.getElementsByClassName("carre")
+//console.log(div);
+
+// var i=0
+// while(i<div.length) //by matthias
+// {
+//     if ((i%2)==1)
+//     {
+//         div[i].style.background= 'rgb(0, 255, 0)';        
+//     }
+//     else
+//     {
+//         div[i].style.background= 'rgb(255,0,0)';
+//     }
+//     i++;
+// }
+//div[1].style.backgroundColor = `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`
 
 
+// for (let index=0; index<div.length; index++) //by prof
+// {
+    //     if (index % 2 != 0)
+    //     {
+        //         div[index].style.backgroundColor= 'rgb(255, 0, 0)'
+        //     }
+        //     else
+        //     {
+            //         div[index].style.backgroundColor= 'rgb(0, 255, 0)'
+            //     }
+            // }
+const bodi = document.getElementsByTagName('body');
+var bouton = document.getElementById('bouton');
+// console.log(bouton)
+// console.log(bodi)
+// console.table(bodi)
+            
+function nbr_rgb_aleatoire(){
+    return Math.floor(Math.random()*256);
+}
+function couleur()
+{
+    return bodi[0].style.backgroundColor = `rgb(${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()})`
+}
+bouton.addEventListener('click', couleur); //donne l'évent click !!
 
 
+const image = document.getElementById('img');
+image.src="../img/js.png";
+console.log(bodi)
 
-console.log(arrayCopy);
+const test = document.getElementsByClassName('test');
+//  for (let index = 0; index < test.length; index++) {
+//     console.log(test[index].getAttribute('id'));    
+//  }
+
+Array.from(test).forEach(element => {
+    element.addEventListener('click', function(e){
+        console.log(e.currentTarget.id)
+    })
+});
