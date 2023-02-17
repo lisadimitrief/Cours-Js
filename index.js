@@ -237,33 +237,33 @@
             //         div[index].style.backgroundColor= 'rgb(0, 255, 0)'
             //     }
             // }
-const bodi = document.getElementsByTagName('body');
-var bouton = document.getElementById('bouton');
+// const bodi = document.getElementsByTagName('body');
+// var bouton = document.getElementById('bouton');
 // console.log(bouton)
 // console.log(bodi)
 // console.table(bodi)
             
-function nbr_rgb_aleatoire(){
-    return Math.floor(Math.random()*256);
-}
-function couleur()
-{
-    return bodi[0].style.backgroundColor = `rgb(${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()})`
-}
-bouton.addEventListener('click', couleur); //donne l'évent click !!
+// function nbr_rgb_aleatoire(){
+//     return Math.floor(Math.random()*256);
+// }
+// function couleur()
+// {
+//     return bodi[0].style.backgroundColor = `rgb(${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()}, ${nbr_rgb_aleatoire()})`
+// }
+// bouton.addEventListener('click', couleur); //donne l'évent click !!
 
 
-const image = document.getElementById('img');
-image.src="../img/js.png";
-console.log(bodi)
+// const image = document.getElementById('img');
+// image.src="../img/js.png";
+// console.log(bodi)
 
-const test = document.getElementsByClassName('test');
+// const test = document.getElementsByClassName('test');
 //  for (let index = 0; index < test.length; index++) {
 //     console.log(test[index].getAttribute('id'));    
 //  }
 
-Array.from(test).forEach(element => {
-    element.addEventListener('click', function(e){
-        console.log(e.currentTarget.id)
-    })
-});
+// Array.from(test).forEach(element => {
+//     element.addEventListener('click', function(e){
+//         console.log(e.currentTarget.id)
+//     })
+// });
