@@ -267,3 +267,34 @@
 //         console.log(e.currentTarget.id)
 //     })
 // });
+
+// function getsurface(larg, long)
+// {
+//     console.log(larg*long);
+// }
+// getsurface(7, 13)
+// getsurface(7, 14)
+
+// let apprenant = {
+//     prenom : "Anne-Sophie",
+//     nom : "Van",
+//     age : "pas tes oignons",
+//     clog : function(){
+//         console.log(this.nom)
+//     }
+// };
+// apprenant.clog();
+
+// function Personnage(pseudo, race, age, mode) {
+//     this.pseudo = pseudo;
+//     this.race = race;
+//     this.age = age;
+//     this.mode = mode;
+// }
+// let monPerso = new Personnage("lyrael", "kitsune", 23, "epeiste");
+// console.log(monPerso);
+
+
+// jeux (mariobros)
+// année de sortie sur chaque console
+// pour chaque console faire une instance de l'objet (le jeu est sorti sur /// en ///)
